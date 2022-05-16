@@ -1,0 +1,18 @@
+{"reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
+        }
+    },
+    "baseUrl": "https://oxygen-qa.cloudticity.com/auth/login",
+    "viewportHeight":1080,
+    "viewportWidth":1920,
+    "defaultCommandTimeout": 40000,
+  "pageLoadTimeout": 90000,
+  "ensureScrollable": false
+}

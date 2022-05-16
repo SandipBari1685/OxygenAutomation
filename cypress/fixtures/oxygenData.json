@@ -1,0 +1,8 @@
+{
+  "email":"ganesh",
+  "password":"Ganesh@FL1702",
+  "invalidEmail":"test123@gmail.com",
+  "invalidPassword":"test@123",
+  "accountNameDev":"Cloudticity-Fission-Development",
+  "accountNameQa":"Cloudticity-Fission-QA"
+}
