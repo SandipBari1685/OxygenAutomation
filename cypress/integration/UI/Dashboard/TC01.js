@@ -7,7 +7,7 @@ const data= require('../../../fixtures/oxygenData.json')
 describe('Dashboard test Cases',()=>{
     before('LogintoApplication',()=>{
         cy.apiLogin(data.email, data.password)
-       cy.saveLocalStorage();
+        cy.saveLocalStorage();
     })
     beforeEach('LogintoApplication',()=>{
         cy.restoreLocalStorage();

@@ -42,7 +42,7 @@ export class LandingPage{
     }
 
     getReportsBtn(){
-         return cy.get('.main-side-nav mat-list-item').eq(4);
+        return cy.get('.main-side-nav mat-list-item').eq(4);
     }
 
     getAdminbtn(){

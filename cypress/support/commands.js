@@ -52,13 +52,13 @@ Cypress.Commands.add('apiLogin',(username, password)=>{
             "ClientId" : "2sjjekabni5vdplr14s5us28hg"
          }
     }).then(resp=>{
-       
+        expect(resp.status).to.eq(200);
         localStorage.setItem('CognitoIdentityServiceProvider.2sjjekabni5vdplr14s5us28hg.shubham.refreshToken',resp.body.AuthenticationResult.RefreshToken)
         localStorage.setItem('CognitoIdentityServiceProvider.2sjjekabni5vdplr14s5us28hg.shubham.accessToken',resp.body.AuthenticationResult.AccessToken)
         localStorage.setItem('CognitoIdentityServiceProvider.2sjjekabni5vdplr14s5us28hg.shubham.idToken',resp.body.AuthenticationResult.IdToken)
         localStorage.setItem('CognitoIdentityServiceProvider.2sjjekabni5vdplr14s5us28hg.LastAuthUser','shubham')
         cy.visit('https://oxygen-qa.cloudticity.com/auth/login');
-       
+        cy.wait(5000)
     })
 })
 Cypress.Commands.add('signinAWS',() => {
