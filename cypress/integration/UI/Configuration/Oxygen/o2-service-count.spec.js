@@ -21,4 +21,19 @@ describe("oz-Service-Count API's",()=>{
             console.log(res);
         })
     })
+
+    it.only("o2-service count API, POST request",()=>{
+        cy.request({
+            url:'https://pi7bhbf7fe.execute-api.us-east-1.amazonaws.com/prod/oxygen-service-count',
+            method:"POST",
+            headers:{
+                "authorizationToken":"73291ddc-7bc6-42d6-b763-a41f4857fa49",
+                "x-header-id-token":window.localStorage.getItem('CognitoIdentityServiceProvider.2sjjekabni5vdplr14s5us28hg.shubham.idToken'),
+                "x-header-org-account":"151:203471797812"
+            },
+            body:{
+                "Account Number":"840798010532"
+            }
+        })
+    })
 })

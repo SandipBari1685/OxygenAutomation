@@ -555,7 +555,7 @@ describe('Dashboard test Cases',()=>{
     })
     })
     
-    it.only('TC_O2_Dashboard_126_Verify the options in the event action icon for open event in All events page.',()=>{
+    it('TC_O2_Dashboard_126_Verify the options in the event action icon for open event in All events page.',()=>{
 
         //(Works fine)
         landingPage.getOpenEventsBtn().invoke('attr', 'class').should('include', 'active');
@@ -570,7 +570,7 @@ describe('Dashboard test Cases',()=>{
         .and('contain.text', 'Ignore Event')
     })
 
-    it.only('TC_O2_Dashboard_127_Verify the options in the event action icon for ignored event in All events page.',()=>{
+    it('TC_O2_Dashboard_127_Verify the options in the event action icon for ignored event in All events page.',()=>{
 
         //(Works fine)
         landingPage.getIgnoredEventBtn().click()
@@ -583,7 +583,7 @@ describe('Dashboard test Cases',()=>{
         .and('contain.text', 'Add Note')
         .and('contain.text', 'Reopen Event')
     })
-    it.only('TC_O2_Dashboard_128_Verify the options in the event action icon for closed event in All events page.',()=>{
+    it('TC_O2_Dashboard_128_Verify the options in the event action icon for closed event in All events page.',()=>{
 
         //(Works fine)
         landingPage.getClosedEventsBtn().click()
