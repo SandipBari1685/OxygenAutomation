@@ -28,5 +28,5 @@ node_modules
 cypress/videos
 cypress/screenshots
 
-AwsCreds.json
-oxygenData.json
+cypress\fixtures\AwsCreds.json
+cypress\fixtures\oxygenData.json
